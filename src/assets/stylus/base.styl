@@ -1,0 +1,34 @@
+$my-shadow()  //函数
+  border 20px solid #ddd
+  box-shadow arguments
+pad(n)
+  padding (- n)
+$padd(n)
+  padding-top n
+$value = 2px 2px 3px #eee
+$position(n)
+  position n
+  z-index 20 unless @z-index //这句的意思是，当饮用当元素为设置z-index是设置为20
+body > div
+  $padd(10px)
+  margin 0
+  border 5px solid #ddd
+  $my-shadow value
+  z-index 5 // 注释这行看看变化
+  $position absolute
+  width 600px
+  height @width
+  left 50%
+  top 50%
+  margin-left -(@width/2) //属性查找，属性会在当前元素找，找不到会一次向上找
+  margin-top -(@height/2)
+
+
+//display flex
+  //transform:rotateY(180deg)
+  //&#app
+  //  border 10px solid #ddd
+
+
+
+
