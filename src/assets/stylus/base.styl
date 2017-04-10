@@ -8,7 +8,7 @@ $padd(n)
 $value = 2px 2px 3px #eee
 $position(n)
   position n
-  z-index 20 unless @z-index //这句的意思是，当饮用当元素为设置z-index是设置为20
+  z-index 20 unless @z-index //这句的意思是，当引用当元素未设置z-index时默认设置为20
 body > div
   $padd(10px)
   margin 0
