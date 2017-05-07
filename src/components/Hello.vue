@@ -24,12 +24,12 @@
 <script>
 export default {
   name: 'hello',
-  data () {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  mounted () {
+  mounted() {
     this.$refs.tag.innerHTML = '<p>我是谁</p>'
   }
 }
@@ -59,8 +59,8 @@ p {
 }
 </style>
 <!--在添加了scoped参数的情况下，动态添加的元素要这样写-->
-<style>
-  p {
-    color: blue;
-  }
-</style>
+<!--<style>-->
+  <!--p {-->
+    <!--color: blue;-->
+  <!--}-->
+<!--</style>-->

@@ -10,6 +10,7 @@ $position(n)
   position n
   z-index 20 unless @z-index //这句的意思是，当引用当元素未设置z-index时默认设置为20
 body > div
+  box-sizing border-box
   $padd(10px)
   margin 0
   border 5px solid #ddd
@@ -19,15 +20,8 @@ body > div
   width 600px
   height @width
   left 50%
-  top 50%
   margin-left -(@width/2) //属性查找，属性会在当前元素找，找不到会一次向上找
-  margin-top -(@height/2)
 
-
-//display flex
-  //transform:rotateY(180deg)
-  //&#app
-  //  border 10px solid #ddd
 
 
 
